@@ -1,19 +1,19 @@
-/*Toutes les polices qui prennent la couleur blanche*/
-nav a{
-    color:white
+/*importer les polices nécessaires*/
+@font-face {
+    font-family:'BEYNO';
+    src: url(../police/BEYNO.otf);
 }
-nav {
-    display: flex;
-    justify-content: flex-end;
-    float: right;
-    margin-top: 15px;
-    margin-right: 120px; /* Ajoutez la valeur de marge souhaitée */
-  }
 
-  nav a {
-    margin-right: 30px;
-    text-decoration: none;
-  }
+@font-face {
+    font-family:'PantheraRegular';
+    src: url(../police/PantheraRegular-MVZ9J.ttf);
+}
+
+@font-face {
+    font-family:'WakandaForever';
+    src: url(../police/WakandaForever-Regular.ttf);
+}
+/*Toutes les polices qui prennent la couleur blanche*/
 
   
 
