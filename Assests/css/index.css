@@ -1,0 +1,19 @@
+/*Toutes les polices qui prennent la couleur blanche*/
+nav a{
+    color:white
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    margin-top: 15px;
+    margin-right: 120px; /* Ajoutez la valeur de marge souhaitée */
+  }
+
+  nav a {
+    margin-right: 30px;
+    text-decoration: none;
+  }
+
+  
+
