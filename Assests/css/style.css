@@ -1,7 +1,6 @@
-.container {
-    width: 80%;
-    margin: 0 auto;
-  }
-body{
-    background-color: green;
+body {
+  background-image: url('../Illustrations-logo/All-pages/arrière_plan.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
