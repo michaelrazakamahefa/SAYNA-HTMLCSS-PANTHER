@@ -1,0 +1,20 @@
+/*importer les polices nécessaires*/
+@font-face {
+    font-family:'BEYNO';
+    src: url(../police/BEYNO.otf);
+}
+
+@font-face {
+    font-family:'PantheraRegular';
+    src: url(../police/PantheraRegular-MVZ9J.ttf);
+}
+
+@font-face {
+    font-family:'WakandaForever';
+    src: url(../police/WakandaForever-Regular.ttf);
+}
+
+@font-face {
+    font-family:'Cantarell';
+    src: url(../police/Cantarell-Regular.ttf);
+}

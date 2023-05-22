@@ -13,6 +13,11 @@
     font-family:'WakandaForever';
     src: url(../police/WakandaForever-Regular.ttf);
 }
+
+@font-face {
+    font-family:'Cantarell';
+    src: url(../police/Cantarell-Regular.ttf);
+}
 /*Toutes les polices qui prennent la couleur blanche*/
 
   
