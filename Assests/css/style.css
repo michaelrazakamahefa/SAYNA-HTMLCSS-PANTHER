@@ -496,3 +496,10 @@ footer .policy{
   margin-left: 50%;
   top: -200px;
 }
+.lien-footer {
+  /* Styles pour les <p> dans la classe "social_icons" */
+  text-decoration: none;
+  font-family: cantarell, sans-serif;
+  color:var(--whiteColor);
+  /* Autres styles souhaités */
+}
