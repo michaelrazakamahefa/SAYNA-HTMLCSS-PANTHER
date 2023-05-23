@@ -31,25 +31,102 @@
     font-family: wakandaforever;
     src: url('../police/WakandaForever-Regular.ttf');
   }
+
+/*Définition de l'arrière plan ou du background*/
   body {
     font-family: "Cantarell";
     background-image: url('../Illustrations-logo/All-pages/arrière_plan.png');
     background-size: cover;
   }
+
+  *{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   
+  /*Position du div.black_panther*/
+  div.black_panther{
+    position: relative;
+    bottom: -200px;
+    left: 40px;
+    }
+  
+/*Design des icône Sayna x Marvel*/
+  .header_icons img {
+    margin-right: 4px; /* Définir l'espace entre les incones*/
+  }
   header .header_icons {
-    margin: 20px 40px;
+    margin: 25px 100px;
     display: flex;
     align-items: center;
+    /*Définition de la taille des icônes*/
+  }
+  #icon-sayna {
+    width: 24px;
+  }
+  #icon-marvel {
+    width: 54px;
+  }
+  #icon-x{
+    width:10px;
+    /*Définition du survol de header_icons*/
   }
   header .header_icons:hover{
     filter: sepia(2000%) invert(100%) brightness(7000%) contrast(50%);
     cursor: pointer;
   }
+/*--------------------------------*/ 
+
+
+/*Design des deux barres verticals et des icônes facebook, instagram, twitter, tiktok:*/
+  .barre{
+    margin-top: -150px;
+    position: absolute;
+    display: flex;
+  }
+
+  .barre .vertical_full{ /*vertical_full pour la longue barre*/
+    width: 3px;
+    height: 505px;
+    margin-left: 23px;
+    background-color:var(--secondarycolor);
+  }
+  .barre .vertical_min{  /*vertical_min + barre_min*/
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .barre .vertical_min .barre_min{ /*vertical_min pour la barre plus courte*/
+    width: 3px;
+    height: 355px;
+    background-color:var(--secondarycolor);
+  }
+  .barre .vertical_min .social_media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .barre .vertical_min .social_media img{
+    margin-top: 21px;
+    cursor: pointer;
+  }
+  .barre .vertical_min .social_media img:hover{ /*Design au survol des icônes*/
+    filter: sepia(100%) invert(100%) brightness(1000%);
+  }
+  .social_media img {/*Définition de la taille des icones facebook, instagram, twitter, tiktok*/
+    width: 17px;
+  }
+/*Fin du design des deux barres verticales et icônes*/
+  
+/*Définition de l'élément de navigation : Accueil-Wakanda-Enigme*/
   header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
   }
   header nav ul {
     display: flex;
@@ -57,14 +134,13 @@
     float: right;
     width: 35%;
   }
-  
   header nav ul li {
     list-style: none;
   }
   header nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--whiteColor);
     font-family: "beyno";
   }
   header nav ul li a:hover{
@@ -75,9 +151,11 @@
     text-decoration: underline;
     font-weight: bold;
   }
+  /*------------------------*/
   h1{
     font-family: 'panthera';
     font-size: 68px;
+    font-weight: normal;
     color: var(--secondarycolor);
   }
   div, video, span,h1, h2, p, img,a{
@@ -92,72 +170,60 @@
     }
   }
   h2:not(footer .social_side h2){
+    margin-bottom: 35px;
     font-family: 'beyno';
+    font-weight: normal;
     font-size: 32px;
     color: var(--secondarycolor);
   }
-  .barre{
-    margin-top: -150px;
-    position: absolute;
-    display: flex;
-  }
-  .barre .vertical_full{
-    width: 4px;
-    height: 370px;
-    background-color:var(--secondarycolor);
-  }
-  .barre .vertical_min{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    align-items: center;
-  }
-  .barre .vertical_min .barre_min{
-    width: 4px;
-    height: 200px;
-    background-color:var(--secondarycolor);
-  
-  }
-  .barre .vertical_min .social_media{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* margin-left: -10px */
-  }
-  .barre .vertical_min .social_media img{
-    margin-top: 21px;
-    cursor: pointer;
-  }
-  .barre .vertical_min .social_media img:hover{
-    filter: sepia(100%) invert(100%) brightness(1000%);
-  }
-  
-  /* Debut de la première section les propos de Black Panther */
+
+  /*Première section les propos de Black Panther */
   main .panther_section{
     width: 100%;
     height: 90vh;
     background-image: url("../Illustrations-logo/Accueil/Pantherhome1..png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 500px 0px;
-  
+    background-position: 600px 10px;
+    
   }
   .panther_section .black_panther{
     width: 45%;
-    margin-top: 2%;
+    margin-top: 2px;
     margin-left: 6%;
+
   }
   .panther_section .black_panther .black_panther_text{
     width: 90%;
     text-align: justify;
+
+  /*Définition de la police des paragraphes <p>*/
   }
   .panther_section .black_panther .black_panther_text p{
     width: 70%;
     font-size: 12px;
     color: var(--whiteColor);
     font-family: 'cantarell';
+    font-weight:normal;
+  }
+
+  /*Définition du lien "Voir plus >", le lien est de couleur blanche mais change de couleur au survol*/
+  .voir-plus {
+    color: var(--whiteColor); /* Couleur par défaut */
+    font-family: 'cantarell';
+    font-size: 12px;
+    font-weight:normal;
   }
   
+  .voir-plus:hover{
+    color:var(--primaryColor); /* Changement de Couleur au survol */
+  }
+  
+  /*Design de la section personnage et cards*/
+  .personnage{
+    margin-top: 400px;
+  }
+
   .panther_section .personnage .card{
     margin-left:100px ;
     margin-top: 300px;
@@ -166,6 +232,7 @@
     height: 40vh;
     align-items: center;
     padding-left: 20px;
+
   }
   .fit_image{
     height: 100%;
@@ -183,8 +250,10 @@
     font-size: 12px;
     font-weight: normal;
     color: var(--whiteColor);
-  
   }
+
+  /*Fin du designe de la partie personnage et cards*/
+
   .tchala_section{
     margin: 0 auto;
   }
@@ -193,6 +262,7 @@
     margin-top: 30%;
     margin-left: 15%;
     justify-content: space-between;
+
   }
   .container .tchala_text{
     width: 50%;
@@ -206,6 +276,12 @@
     font-size: 12px;
     font-weight: normal;
   }
+
+  .front_face h3 { /*Positionnement du <h3>*/
+    margin-top: 10px; /* Ajoute un espace de 10 pixels avant h3 */
+    margin-bottom: 20px; /* Ajoute un espace de 10 pixels après h3 */
+    margin-right: 50px;/* Centre horizontalement le contenu de h3 */
+    }
   .container .tchala_bio{
     width:50% ;
     margin-left: 10px;
@@ -215,13 +291,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: var(--sixthColor);
     height: 22%;
   }
   .container .tchala_bio .back_ground img{
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
+    height: auto; /* Réglez "height" sur "auto" pour conserver les proportions d'origine */
     margin-top: -10px;
     z-index: 0;
   }
@@ -231,7 +307,7 @@
     padding-top: 250px;
     padding-bottom: 40px;
     padding-left: 50px;
-    background-color: var(--whiteColor);
+    background: var(--whiteColor);
     border-radius: 2%;
   }
   .container .tchala_bio h3{
@@ -250,10 +326,15 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-family:'cantarell';
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 30px; /* Ajouter de l'espace en bas des boutons */
   }
   .container .tchala_bio .front_face .biographie p{
     font-family: 'cantarell';
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 14px;
   }
   /* Mise en Bold des elemements biographiques de Black Panther */
   .container .tchala_bio .front_face .biographie p .bold{
@@ -264,15 +345,21 @@
     font-weight: normal;
     font-size: 11px;
   }
-  /* Positionnement du poster arrondi de black panther */
+  /* Positionnement du poster */
   .container .tchala_bio .tchala_poster{ 
     display: block;
     text-align: center;
-    margin-top: 110%;
+    margin-top: 70%;
   }
+  .tchala_poster img{
+    width: 450px;
+    height: auto;
+  }
+
+  /*Formulaire de contact*/
   main .form_section{
     background-image: url('../Illustrations-logo/Accueil/Pantherhome7.png');
-    margin-top: -40%;
+    margin-top: -20%;
     background-size: contain;
     width: 100%;
     height: 100vh;
@@ -317,76 +404,89 @@
     margin-bottom: 20px;
     background-color: transparent;
   }
+
   main .form_section .displayForm .formLogin .btn{
-    width: 174px;
-    height: 54px;
+    width: 150px;
+    height: 40px;
     margin: 0 auto;
     padding: 10px 10px;
     border: none;
     border-radius: 38px;
-    background-color: var(--thirdColor);
+    background-color: var(--primaryColor);
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'cantarell';
+    font-size: 12px;
+    font-weight: bold;
   }
   main .form_section .displayForm .formLogin .btn:hover{
     box-shadow: 0 0 20px var(--sixthColor);
-  }
-  footer{
-    background-image: url("../Illustrations-logo/All-pages/back_footer.png");
-    background-size: cover;
-  }
-  .footer{
-    display: flex;
-  }
-  footer .marvel_side{
-    padding: 20px 100px;
-  }
-  .footer_icons{
-    position: relative;
-    top: -25%;
-    left: 10%;
-  }
-  footer .social_side{
-    justify-content: space-between;
-    display: flex;
-  }
-  footer .social_side div{
-    margin: 0 30px;
-  }
-  footer .social_side .icon_container{
-    display: flex;
-    padding: 0;
-    margin-top: -20px;
-  }
-  
-  footer .social_side h2{
-  
-    color: var(--whiteColor);
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 12px;
-  
-  }
-  footer .social_side .icon_container img{
-    cursor: pointer;
-    margin: 15px;
-  }
-  footer .social_side .icon_container img:hover,
-  footer .marvel_side:hover{
-    cursor: pointer;
-    transition: .5s;
-    transform: scale(110%);
-  }
-  footer .sayna_footer{
-    position: relative;
-    left:-55%;
-    top: -50%;
-  }
-  footer .policy{
-    position: relative;
-    color: var(--whiteColor);
-    margin-left: 50%;
-    top: -200px;
-  }
-  
+  } 
+  /*Formulaire : définition de la police des placehold et textarea*/
+    .form_section input::placeholder,
+    .form_section textarea::placeholder {
+      font-family: cantarell, sans-serif; /* Remplacez la police par celle souhaitée */
+      font-size: 14px; /* Remplacez la taille par celle souhaitée */
+      color: var(--sixthColor); /* Remplacez la couleur par celle souhaitée */
+    }
+  /*Définition du footer/*
+
+  /*Définition du background*/
+
+footer{
+  background-image: url("../Illustrations-logo/All-pages/back_footer.png");
+  background-size: cover;
+}
+.footer{
+  display: flex;
+}
+footer .marvel_side{
+  padding: 20px 100px;
+}
+.footer_icons{
+  position: relative;
+  top: -25%;
+  left: 10%;
+}
+footer .social_side{
+  justify-content: space-between;
+  display: flex;
+}
+footer .social_side div{
+  margin: 0 30px;
+}
+footer .social_side .icon_container{
+  display: flex;
+  padding: 0;
+  margin-top: -20px;
+}
+
+footer .social_side h2{
+
+  color: var(--whiteColor);
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 12px;
+
+}
+footer .social_side .icon_container img{
+  cursor: pointer;
+  margin: 15px;
+}
+footer .social_side .icon_container img:hover,
+footer .marvel_side:hover{
+  cursor: pointer;
+  transition: .5s;
+  transform: scale(110%);
+}
+footer .sayna_footer{
+  position: relative;
+  left:-55%;
+  top: -50%;
+}
+footer .policy{
+  position: relative;
+  color: var(--whiteColor);
+  margin-left: 50%;
+  top: -200px;
+}
