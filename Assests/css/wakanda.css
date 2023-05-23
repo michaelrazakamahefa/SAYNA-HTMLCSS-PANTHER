@@ -1,5 +1,11 @@
 @import url('../css/style.css');
 
+/* Si l'onglet est actif le rubrique est surligné et violet */
+header nav ul li.active a {
+    text-decoration: underline;
+    color: #6b3eff;
+  }
+  
 p{
     color: var(--whiteColor);
     font-size: 12px;

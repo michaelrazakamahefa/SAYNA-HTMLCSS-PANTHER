@@ -32,6 +32,12 @@
     src: url('../police/WakandaForever-Regular.ttf');
   }
 
+/* Si l'onglet est actif le rubrique est surligné et violet */
+header nav ul li.active a {
+  text-decoration: underline;
+  color: #6b3eff;
+}
+
 /*Définition de l'arrière plan ou du background*/
   body {
     font-family: "Cantarell";

@@ -4,6 +4,12 @@ main .okoye_section{
     display: flex;
 
 }
+
+/* Si l'onglet est actif le rubrique est surligné et violet */
+header nav ul li.active a {
+    text-decoration: underline;
+    color: #6b3eff;
+  }
 /* Design de la section Okoye */
 main .okoye_section .okoye_image{
     background-image: url('../Illustrations-logo/Enigme/Pantherenigme1.png');
