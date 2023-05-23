@@ -16,10 +16,11 @@ p{
 h1{
     font-family: 'beyno';
     letter-spacing: -4px;
+    margin-top: 100px;
+    margin-bottom: 20px;
 } 
 main .wakanda_section{
     background-image: url('../Illustrations-logo/Wakanda/Pantherwakanda1.png');
-    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -29,17 +30,17 @@ main .wakanda_section{
 main .wakanda_section .wakanda_header{
     margin-left:100px;
     padding-top: 150px;
-    width: 60%;
+    width: 50%;
 }
 main .wakanda_section .wakanda_header h2{
     text-align: left;
     font-family: 'wakandaforever';
-    margin-top: 10px;
+    padding-top: 10px;
 }
 main .wakanda_section .wakanda_header p{
     font-family: 'cantarell';
     font-size: 12px;
-    width: 70%;
+    width: 50%;
     text-align: justify;
 }
 main .display_section{
@@ -54,6 +55,12 @@ main .display_contents{
     display: flex;
     justify-content: space-between;
 }
+.display_section{
+    display: flex;
+}
+.display_contents{
+    padding-top: 100px;
+}
 main .display_contents .left_side{
     width: 45%;
 }
@@ -62,4 +69,16 @@ main .display_contents .right_side{
 }
 main .display_contents .right_side  img{
     width: 100%;
+}
+
+video{
+    margin-top: 50px;
+}
+
+.left_side h2{
+    padding-top: 40px;
+}
+
+.right_side h2{
+    padding-top: 40px;
 }
