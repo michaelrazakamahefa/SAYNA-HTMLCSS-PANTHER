@@ -469,11 +469,12 @@ footer .social_side .icon_container{
 
 footer .social_side h2{
 
+  font-family:cantarell, sans-serif;
   color: var(--whiteColor);
   font-size: 14px;
   text-align: center;
   font-weight: normal;
-  letter-spacing: 12px;
+  letter-spacing: 5px;
 
 }
 footer .social_side .icon_container img{
@@ -494,8 +495,8 @@ footer .sayna_footer{
 footer .policy{
   position: relative;
   color: var(--whiteColor);
-  margin-left: 50%;
-  top: -200px;
+  margin-left: 675px;
+  top: -50px;
 }
 .lien-footer {
   /* Styles pour les <p> dans la classe "social_icons" */
@@ -503,4 +504,73 @@ footer .policy{
   font-family: cantarell, sans-serif;
   color:var(--whiteColor);
   /* Autres styles souhaités */
+}
+.social_side{
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
+}
+.social_side{
+  margin-top: 150px;
+}
+.social_icons{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 250px;
+  
+}
+
+.icon_container{
+  top: 50px;
+  display: flex;
+  position: absolute;
+  padding-top: 50px;
+  
+}
+
+.wakanda_page{
+  display: flex;
+  padding-right: 60px;
+  flex-direction: column;
+  border-bottom: 30px;
+
+}
+.wakanda_page h2{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.marvel_side{
+  margin-top: 150px;
+  margin-left: 250px;
+}
+/*Taille des images en footer*/
+#trois-ronds{
+  width: 175px;
+}
+.sayna_footer{
+  width: 75px;
+}
+
+#fb, #ig, #tw, #tk{
+  width: 30px;
+}
+
+.policy p{
+  margin-left: 60px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.lien-footer{
+  padding-bottom: 10px;
+}
+
+.lien-footer:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--forthColor)
 }
