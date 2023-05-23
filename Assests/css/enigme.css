@@ -1,0 +1,133 @@
+@import url('./style.css');
+
+main .okoye_section{
+    display: flex;
+
+}
+/* Design de la section Okoye */
+main .okoye_section .okoye_image{
+    background-image: url('../Illustrations-logo/Enigme/Pantherenigme1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+main .okoye_section .text_for_okoye{
+    width: 600px;
+    text-align: justify;
+    float: right;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+main .okoye_section .text_for_okoye h2{
+    font-size: 30px;
+}
+main .okoye_section .text_for_okoye p{
+    width: 350px;
+    color: var(--whiteColor);
+    font-family: 'cantarell';
+    font-size: 12px;
+    margin-top: 100px;
+    margin-left: 150px;
+    float: right;
+}
+main .okoye_section .text_for_okoye img{
+    position: relative;
+    width: 600px;
+    /* margin-left: -100px; */
+    margin-top: -280px;
+}
+main .crypted_text{
+    margin:  100px 100px;
+}
+main .image{
+    display: block;
+    position: relative;
+    margin-bottom: -400px;
+}
+main .crypted_text .crypted_title{
+    width:70% ;
+    font-family:'wakandaforever';
+}
+main .crypted_text .display_div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+main .crypted_text .display_div p{
+    font-family: 'cantarell';
+    color: var(--whiteColor);
+}
+main .crypted_text .display_div .alphabet{
+    text-transform: uppercase;
+}
+main .crypted_text div{
+    width: 45%;
+}
+main .crypted_text .after_crypted_text {
+    margin-top: 200px;
+}
+main .crypted_text .after_crypted_text .last_parag{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+}
+main .crypted_text .display_div img{
+    margin-top: -50%;
+    position:relative;
+    width: 120%;
+    /* margin-left: -50px; */
+    transform: rotate(5deg);
+}
+main .crypted_text .response_form{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+main .crypted_text .response_form label{
+    color: var(--primaryColor);
+    font-family: 'cantarell';
+}
+main .crypted_text .response_form input{
+    margin-top: 20px;
+}
+main .crypted_text #reponse{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 38px;
+    background-color: transparent;
+}
+main .crypted_text #reponse::placeholder{
+    color: var(--primaryColor);
+    font-family: 'cantarell';
+    font-size: 11px;
+}
+main .crypted_text .response_form .btn{
+    margin-top: 80px;
+    width: 30%;
+    padding: 10px 10px;
+    align-self: center;
+    border: none;
+    color: var(--whiteColor);
+    border-radius: 38px;
+    background-color: var(--thirdColor);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'cantarell';
+}
+main .crypted_text .response_form .btn:hover{
+    box-shadow: 2px 2px 20px var(--primaryColor);
+    filter: blur(20);
+}
+main section  .wakanda_transform{
+    font-family: 'wakandaforever';
+    text-transform: uppercase;
+    font-family: 40px;
+}

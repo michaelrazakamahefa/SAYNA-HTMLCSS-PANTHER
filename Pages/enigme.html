@@ -4,62 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Appelé style.css qui est le fichier css commun pour toutes les pages-->
-    <link rel="stylesheet" href="../Assests/css/style.css">
-    <!--Appelé enigme.css qui est le fichier css dédié pour enigme-->
-    <link rel="stylesheet" href="../Assests/css/enigme.css">
+    <link type="text/css" rel="stylesheet" href="../Assests/css/enigme.css">
+    <title>ENIGME</title>
 </head>
 <body>
-      <!--Je commencer avec le header est constitué de:
-    - Logo Sayna + Marvel
-    - Les bouton de navigation Acceuil - Wakanda - Enigme-->
     <header>
-        <div class = logo-sayna-x-marvel>
-            <img src="./Assests/Illustrations-logo/All pages/footer2.png" alt="Logo de Sayna et Marvel">
-        </div>
         <nav>
-            <a href="../index.html">ACCUEIL</a>
-            <a href="./wakanda.html">WAKANDA</a>
-            <a href="./enigme.html">ENIGME</a>
+            <div class="header_icons">
+                <img src="../Assests/Illustrations-logo/All-pages/icon_SAYNA.png" alt="">
+                <img src="../Assests/Illustrations-logo/All-pages/icon_x.png" alt="">
+                <img src="../Assests/Illustrations-logo/All-pages/icon_MARVEL.png" alt="">
+            </div>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../Pages/wakanda.html">Wakanda</a></li>
+                <li><a href="#">Enigme</a></li>
+            </ul>
         </nav>
     </header>
-<main>
-    <section id="section-enigme">
-        <img src="./Assests/Illustrations-logo/Enigme/Pantherenigme1.png" alt="">
-        <h1>Releve le defi des dora milaje</h1>
-        <img src="./Assests/Illustrations-logo/Enigme/Pantherenigme2.png" alt="">
-        <p>Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
-            rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
-            vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
-            renseignements wakandais.
-            Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
-            et apprend par la même occasion la première valeur d’une Dora Milaje 
-        </p>
-    </section>
-    <section id="alphabet">
-        <p id="citation">“ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS</p>
-        <p>Voici la transicription de l’alphabet :
-            A = A ; B = b ; c = c ; d = d ; e = e ; f = f ; g = g ; h = h ; i = i ; j = j ; 
-            k = k ; l = l ; m = m ; n = n ; o = o ; p = p ; q = q ; r = r ; s = s ; t = t ;
-            u = u ; w = w ; x = x ; y = y ; z = z 
-        </p>
-        <img src="./Assests/Illustrations-logo/Enigme/Pantherenigme2.png" alt="">
-        <p>Le savais tu?</p>
-        <p>Le savais tu ? 
-            Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est 
-            la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une 
-            phrase. Et si tu regardais quel symbole revient le plus souvent ?
-        </p>
-    </section>
-    <section id="reponse">
-        <p>Alors, as tu les réponses</p>
-        <textarea name="answer" id="answer" cols="1" rows="1" placeholder="Réponse"></textarea>
-        <input class="btn" type="submit" value="ENVOYER" />
-    </section>
-</main>
-<footer>
-    A copier coller dès que c'est bon sur une page puisque c'est indentique pour
-</footer>
+    <main>
+        <section class="okoye_section">
+            <div class="okoye_image">
+                <div class="text_for_okoye">
+                    <h2>Releve le defi de doras milaje</h2>
+                    <p>
+                        Les Doras Milaje sont de farouches guerrières d'élites. Elles constituent la granderapprochée du Roi en personne et ont de 
+                        nombreuses occasions de lui sauver la vie. Leur Général, Okoye est également la dirigeante des forces armées et des renseignements wakandais.<br>
+                        Prouve tont talent et déchiffre cette réplique d'Okoye écrite en wakandais et apprend par la même occasion la première valeur d'une Dora Milaje !
+                    </p>
+                    <img src="../Assests/Illustrations-logo/Enigme/Pantherenigme2.png" alt="">
+                    <div class="image">
+                        <img class="ligne" src="../Assests/Illustrations-logo/Enigme/Pantherenigme3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="crypted_text">
+            <h2 class="crypted_title">"SI JE SUIS  FIDELE C'EST A CE TRONE 
+                PEU IMPORTE QUI MONTE DESSUS"</h2>
+            <div class="display_div">
+                <div class="crypted_first_div">
+                    <p>Voici la transcription de l'alphabet</p>
+                    <p class="alphabet">
+                        A =<span class="wakanda_transform">A </span>  ; B =<span class="wakanda_transform">B</span> ; C = <span class="wakanda_transform">C</span>;
+                        D =<span class="wakanda_transform">D </span>; E = <span class="wakanda_transform">E</span>  ; F = <span class="wakanda_transform">F </span>;
+                        G = <span class="wakanda_transform">G </span>  ; H = <span class="wakanda_transform">H</span> ; I = <span class="wakanda_transform">I</span> ; 
+                        J = <span class="wakanda_transform">J</span> ; 
+                        K = <span class="wakanda_transform">K</span> ; L= <span class="wakanda_transform">L</span> ; M = <span class="wakanda_transform">E</span> ; N = <span class="wakanda_transform">N</span> ; 
+                        O = <span class="wakanda_transform">O</span>  ; P = <span class="wakanda_transform">P</span> ; Q = <span class="wakanda_transform">Q</span>  
+                        ; R = <span class="wakanda_transform">R</span>  ; S = <span class="wakanda_transform">S</span>  ; T = <span class="wakanda_transform">T</span>  ;
+                        U = <span class="wakanda_transform">U</span>  ; W = <span class="wakanda_transform">W</span>  ; X = <span class="wakanda_transform">X</span>  
+                        ; Y = <span class="wakanda_transform">Y</span>  ; Z = <span class="wakanda_transform">Z</span>   
+                    </p>
+                    <form action="" class="response_form">
+                        <label for="reponse">Alors, as-tu la réponse ?</label>
+                        <input id="reponse" name="reponse" type="text" placeholder="Réponse">
+                        <input class="btn" type="submit" value="Envoyer">
+                    </form>
+                </div>
+                <div class="after_crypted_text">
+                    <div class="last_parag">
+                        <p>Le savais tu ? </p>
+                    <p>
+                        Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français   est 
+                        la lettre E. En pourcentage de fréquence, la lettre est utilisée  à 14% dans une 
+                        phrase. Et si tu regardais quel symbole revient le plus souvent ? </p>
+                    </div>
+                    <img src="../Assests/Illustrations-logo/Enigme/Pantherenigme2.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="marvel_side">
+                <img src="../Assests/Illustrations-logo/All-pages/footer1.png" alt="">
+                <img class="sayna_footer" src="../Assests/Illustrations-logo/All-pages/footer2.png" alt="">
+        </div>
+        <div class="social_side">
+            <div class="wakanda_page">
+                <h2>Pages</h2>
+                <p style="color:white; font-family: 'cantarell';">A propos</p>
+                <p style="color:white; font-family: 'cantarell';">Wakanda</p>
+            </div>
+            <div class="social_icons">
+                <h2>Retrouvez nous</h2>
+                <div class="icon_container">
+                    <img src="../Assests/Illustrations-logo/All-pages/footer3.png" alt="">
+                    <img src="../Assests/Illustrations-logo/All-pages/footer4.png" alt="">
+                    <img src="../Assests/Illustrations-logo/All-pages/footer5.png" alt="">
+                    <img src="../Assests/Illustrations-logo/All-pages/footer6.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+            <div class="policy">
+                <p >2022 tous drois réservés <span class="span"> </span>Politique de confidentialité<span class="span"> </span>Condition d'utilisation</p>
+            </div>
+    </footer>
 </body>
 </html>
