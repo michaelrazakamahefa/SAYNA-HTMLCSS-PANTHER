@@ -574,3 +574,17 @@ footer .policy{
   font-weight: bold;
   color: var(--forthColor)
 }
+
+/*Designer les button pour avoir les les deux petits points dans le footer*/
+.policy .point {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: var(--whiteColor);
+  cursor: pointer;
+}
